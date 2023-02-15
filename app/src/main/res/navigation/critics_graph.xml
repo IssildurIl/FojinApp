@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/critics_graph"
+    app:startDestination="@id/criticsFragment">
+
+    <fragment
+        android:id="@+id/criticsFragment"
+        android:name="com.iish.fojinapp.ui.critics.CriticsFragment"
+        android:label="fragment_crirics"
+        tools:layout="@layout/fragment_crirics" />
+</navigation>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FojinApp</string>
+
+    <string name="critics_bottom_name">Critics</string>
+    <string name="reviews_bottom_name">Reviews</string>
+
+    <string name="reviews_title">title</string>
+
+    <string name="error_load_state_message">load error</string>
+    <string name="retry_load">retry</string>
+
+    <string name="search_view_hint">Search review</string>
+    <string name="read_review">Read Review</string>
+</resources>

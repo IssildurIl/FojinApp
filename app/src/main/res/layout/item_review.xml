@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/title_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/reviews_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/barrier"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="title_image" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/barrier"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="@tools:sample/lorem" />
+
+    <TextView
+        android:id="@+id/description_short"
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/barrier"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        tools:text="@tools:sample/lorem/random" />
+
+    <TextView
+        android:id="@+id/time"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/barrier"
+        app:layout_constraintTop_toBottomOf="@id/description_short"
+        tools:text="@tools:sample/lorem/random" />
+
+    <Button
+        android:id="@+id/link"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/read_review"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/barrier"
+        app:layout_constraintTop_toBottomOf="@id/time"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FojinApp</string>
+
+    <string name="critics_bottom_name">Критики</string>
+    <string name="reviews_bottom_name">Обзоры</string>
+
+    <string name="reviews_title">Заголовок</string>
+
+    <string name="error_load_state_message">Ошибка загрузки</string>
+    <string name="retry_load">заново</string>
+
+    <string name="search_view_hint">Поиск обзоров</string>
+    <string name="read_review">Читать обзор</string>
+</resources>
